@@ -11,7 +11,7 @@
         "source": "github",
         "repo": "simonediroma/cdp"
       },
-      "version": "4.1.0",
+      "version": "4.1.1",
       "description": "Structured Demolition Protocol — iteratively hardens any project specification through critique cycles.",
       "category": "productivity",
       "keywords": ["demolition", "cowork", "cdp", "spec"]
