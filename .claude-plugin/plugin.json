@@ -1,7 +1,7 @@
 {
   "name": "cdp",
   "description": "Structured Demolition Protocol for iteratively hardening any project specification through onboarding, critique, and integration cycles.",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "author": {
     "name": "simone di roma",
     "email": "simone.razzano@gmail.com"
