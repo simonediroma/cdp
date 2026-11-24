@@ -1,9 +1,5 @@
 # 08 — Ship Your PoC
 
-🎬 Video: [`video-prompts.md#08-ship-your-poc`](video-prompts.md#08-ship-your-poc)
-
----
-
 No new mechanics here — executing a macro plan through to a shipped `M_deploy` is Course 2 Lessons 05 and 06 in full, and nothing about how you *run* a macro changes because the app is small. What's worth doing deliberately is watching your own plan finish, and noticing whether the amount of care each macro asks for actually matches its risk level.
 
 ## Now do it

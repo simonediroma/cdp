@@ -1,9 +1,5 @@
 # 15 — The Five Non-Prescribed Dimensions
 
-🎬 Video: [`video-prompts.md#15-non-prescribed-dimensions`](video-prompts.md#15-non-prescribed-dimensions)
-
----
-
 The manifesto declares procedures precisely. This lesson is about what it deliberately does *not* declare, and why leaving those things unlegislated is a design choice, not an oversight.
 
 The CDP refuses to legislate five dimensions of its own operation. Each is sized by the author or organization to the artifact and context. Legislating any of them across every domain would distort at least one domain the CDP is meant to serve.

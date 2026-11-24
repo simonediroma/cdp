@@ -1,9 +1,5 @@
 # 01 — The Problem
 
-🎬 Video: [`video-prompts.md#01-the-problem`](video-prompts.md#01-the-problem) — plays before you read, ~50s hook.
-
----
-
 Specifications drafted in isolation reliably have blind spots. Not occasionally — reliably.
 
 This is true regardless of what kind of project the spec belongs to. Nothing in this course is specific to software, or to marketing, or to any other domain — the CDP is a domain-agnostic protocol, and the problem it answers shows up identically wherever someone writes something meant to describe or prescribe something coherently. The pattern shows up across very different kinds of writing: a philosophical essay, a long-form book, a product spec, even the CDP's own manifesto. Each looked complete to the person who wrote it. Each missed things systematically, in ways the author could not see from inside their own head. This isn't a claim about carelessness. A careful author still misses — because the failure mode isn't attention, it's perspective. You cannot see your own blind spot by trying harder to look at it; that's what makes it a blind spot.

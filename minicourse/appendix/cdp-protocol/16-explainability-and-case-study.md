@@ -1,9 +1,5 @@
 # 16 — Explainability and the Self-Demolition Case Study
 
-🎬 Video: [`video-prompts.md#16-explainability-and-case-study`](video-prompts.md#16-explainability-and-case-study)
-
----
-
 ## Explainability by construction
 
 In the augmentation framing from Lesson 04, the demolition history is the explainability artifact: every challenge the spec survived traces back to the persona that raised it, the response that resolved it, and the integrate that applied it. Augmentation requires this — opaque AI decisions break the trust calibration that makes augmentation viable in the first place. The CDP delivers explainability as a *side-effect* of running the protocol, not as a separate audit layer bolted on afterward. Run the manifesto as written, and the audit trail exists automatically: session files, history, and memory get written at every round close because the procedure requires it, not because someone remembered to document things later.

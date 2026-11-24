@@ -1,9 +1,5 @@
 # 02 — The Gates Already in Your Prompts
 
-🎬 Video: [`video-prompts.md#02-the-gates-already-in-your-prompts`](video-prompts.md#02-the-gates-already-in-your-prompts)
-
----
-
 Before this course teaches anything new, it's worth being precise about what you already have. Every macro `/cdp:spec-to-code` generated (Course 2 Lesson 03) carries a Pre-PR Gate scaled to its risk level. These are the same four behaviors, ready to be reused the moment something breaks — Course 2 Lesson 04 covers how completely each is actually implemented in what you were handed, which is worth knowing before you lean on one of them mid-fix.
 
 ## The four gates, recapped

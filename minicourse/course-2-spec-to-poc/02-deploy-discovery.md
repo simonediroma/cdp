@@ -1,9 +1,5 @@
 # 02 — Deploy Discovery — Deciding Infrastructure Before You Build
 
-🎬 Video: [`video-prompts.md#02-deploy-discovery`](video-prompts.md#02-deploy-discovery)
-
----
-
 A loose architectural definition for a GREENFIELD project can get away with a single silent line: "choose the simplest stack that fits the PRD and flag it as an assumption." That's fine for the *application* stack — but infrastructure decisions like budget, provider, region, and domain are not the kind of thing that should default silently. A properly hardened one treats them as the author's call, the same way the seven onboarding questions are — CDP formalizes, it doesn't invent.
 
 That's what Deploy Discovery is: a short, mandatory interview inserted into `/cdp:spec-to-code`'s Step 1, for GREENFIELD projects only, that runs before macro decomposition begins.

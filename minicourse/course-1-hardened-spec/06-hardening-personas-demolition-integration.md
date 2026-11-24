@@ -1,9 +1,5 @@
 # 06 — Hardening the Draft: Personas, Demolition, Integration
 
-🎬 Video: [`video-prompts.md#06-hardening-personas-demolition-integration`](video-prompts.md#06-hardening-personas-demolition-integration)
-
----
-
 Lesson 05 got you a v1.0 draft. A draft is not a hardened spec — nothing has attacked it yet. This lesson walks the three commands that do: `/cdp:persona` (who attacks), `/cdp:demolish` (the attack itself), `/cdp:integrate` (what changes because of it) — plus `/cdp:export`, for the moment the spec needs to leave Claude entirely. This is the plugin's automation of the "adversarial, structured demolition" path named in Lesson 02; the [Appendix's CDP Protocol deep dive](../appendix/cdp-protocol/00-index.md) has the full manifesto-level mechanics behind every rule mentioned here.
 
 ## `/cdp:persona` — who does the attacking

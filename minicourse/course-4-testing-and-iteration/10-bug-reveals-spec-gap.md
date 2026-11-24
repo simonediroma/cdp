@@ -1,9 +1,5 @@
 # 10 — When a Bug Reveals a Spec Gap
 
-🎬 Video: [`video-prompts.md#10-bug-reveals-spec-gap`](video-prompts.md#10-bug-reveals-spec-gap)
-
----
-
 Lesson 05 covered bugs that are actually missed spikes — an implementation-level gap that should have been investigated before it was built. This lesson covers a different case, one level up: bugs that trace back not to an implementation assumption, but to the **spec itself** being wrong, ambiguous, or silent on the case that just broke.
 
 ## The tell, this time

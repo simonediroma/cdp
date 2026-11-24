@@ -1,9 +1,5 @@
 # 07 — Doubt-Driven Review, Applied Retroactively
 
-🎬 Video: [`video-prompts.md#07-doubt-driven-review-retroactively`](video-prompts.md#07-doubt-driven-review-retroactively)
-
----
-
 Doubt-Driven Review, as your HIGH-risk macro prompts define it, is a pre-emptive tool: state a decision as a CLAIM, list ways it could be wrong (DOUBT), verify or adjust (RECONCILE), before you write the code. Nothing about that three-step shape requires you to be looking forward. Pointed backward at a decision that already shipped and already broke, it becomes a genuine root-cause technique.
 
 ## The three steps, run backward

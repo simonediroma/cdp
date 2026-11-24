@@ -1,9 +1,5 @@
 # 05 — Drafting v1.0 with `/cdp:onboarding`
 
-🎬 Video: [`video-prompts.md#05-drafting-v1-with-onboarding`](video-prompts.md#05-drafting-v1-with-onboarding)
-
----
-
 `/cdp:onboarding` is the plugin's concrete answer to "how do I get a first draft down": a guided interview that scans whatever documents already exist in your project folder, works out what's covered versus what's a gap, and asks you about the gaps only — one question at a time, confirming its understanding after each answer before moving on. This is the plugin's version of what Path C in Lesson 02 needs before it can attack anything — you can't demolish a spec that doesn't exist yet.
 
 ## What it actually asks

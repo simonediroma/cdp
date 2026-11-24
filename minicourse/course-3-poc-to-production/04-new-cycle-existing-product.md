@@ -1,9 +1,5 @@
 # 04 — A New CDP Cycle Against an Existing Product
 
-🎬 Video: [`video-prompts.md#04-new-cycle-existing-product`](video-prompts.md#04-new-cycle-existing-product)
-
----
-
 Adding a feature to a live product still starts with `/cdp:onboarding → /cdp:persona → (/cdp:demolish → /cdp:integrate) × N`, exactly as Course 1 Lessons 05-06 described. Nothing about those commands' mechanics changes. What changes is the *context* the cycle runs in — and one genuinely new use for `architecture-context.md` that Course 1 never needed.
 
 ## Feasibility becomes a live question

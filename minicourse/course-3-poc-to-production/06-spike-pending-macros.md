@@ -1,9 +1,5 @@
 # 06 — SPIKE PENDING Macros
 
-🎬 Video: [`video-prompts.md#06-spike-pending-macros`](video-prompts.md#06-spike-pending-macros)
-
----
-
 Course 2 mentioned spikes in passing — a macro gets marked `⏳ SPIKE PENDING` instead of getting a full implementation prompt when there's genuinely not enough information to write one. In FEATURE-ADDITION work, spikes stop being an edge case and start being routine: you're touching a system someone else's decisions already shaped, and some of those decisions were never written down.
 
 ## What actually triggers a spike

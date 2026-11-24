@@ -1,9 +1,5 @@
 # 08 — Phase 1: Generative Onboarding
 
-🎬 Video: [`video-prompts.md#08-phase-1-onboarding`](video-prompts.md#08-phase-1-onboarding)
-
----
-
 The CDP is generative before it's adversarial. Phase 1's job is to onboard raw material to a **first-complete-draft** — a spec coherent enough to actually be attacked. Skip this phase and the demolition has no stable target; run it properly and the question "is my spec mature enough to demolish?" mostly disappears on its own.
 
 The CDP is format-agnostic here — it produces and operates on PRDs, user stories, technical designs, essays, policy documents, or plain prose. The five-move pattern below works on any of them.

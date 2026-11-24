@@ -1,9 +1,5 @@
 # 04 — Command Overview
 
-🎬 Video: [`video-prompts.md#04-command-overview`](video-prompts.md#04-command-overview)
-
----
-
 Eleven commands, one plugin. This lesson is the map — each one gets its own lesson later where it matters for shipping a PoC.
 
 | Command | What it does | Covered in |

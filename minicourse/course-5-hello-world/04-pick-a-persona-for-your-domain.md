@@ -1,9 +1,5 @@
 # 04 — Pick a Persona for Your Domain
 
-🎬 Video: [`video-prompts.md#04-pick-a-persona-for-your-domain`](video-prompts.md#04-pick-a-persona-for-your-domain)
-
----
-
 Persona selection happens inside `/cdp:demolish` itself, not as a separate command — Phase 0 of that skill presents the full list of predefined personas (plus any custom ones you've built with `/cdp:persona`) and asks which perspective to demolish your spec from. Before you run it, it's worth deciding deliberately instead of picking the first name on the list.
 
 ## The six predefined personas

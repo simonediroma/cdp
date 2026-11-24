@@ -57,10 +57,6 @@ This deep dive is a teaching layer over two primary documents in the [cdp claude
 
 Where a lesson makes a claim, it cites the section (`§` for the manifesto, `F` for foundations) so you can go read the source directly.
 
-## Videos
-
-See [`video-prompts.md`](video-prompts.md) for one AI-video-generation prompt per lesson. Each lesson file links to its entry.
-
 ## Unfamiliar term?
 
 Check [`../01-glossary.md`](../01-glossary.md) and [`../02-useful-resources.md`](../02-useful-resources.md).

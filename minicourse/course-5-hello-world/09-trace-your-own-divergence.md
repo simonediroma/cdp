@@ -1,9 +1,5 @@
 # 09 — Trace Your Own Divergence
 
-🎬 Video: [`video-prompts.md#09-trace-your-own-divergence`](video-prompts.md#09-trace-your-own-divergence)
-
----
-
 Lesson 01 made a claim before you'd written a single word of your spec: that whatever ended up in your build would be a function of your own answers, not a fixed template the plugin was always going to produce. You've now been through the whole loop once. This lesson asks you to make that claim concrete instead of taking it on faith.
 
 ## The trace

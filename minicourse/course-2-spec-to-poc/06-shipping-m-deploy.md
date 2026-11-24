@@ -1,9 +1,5 @@
 # 06 — Shipping the `M_deploy` Macro
 
-🎬 Video: [`video-prompts.md#06-shipping-m-deploy`](video-prompts.md#06-shipping-m-deploy)
-
----
-
 Every other macro in your plan ends with a Pre-PR Gate scaled to risk — 5-axis review, plus TDD, plus (for HIGH risk) Doubt-Driven Review and a security checklist. `M_deploy` is the one macro that gets a different gate entirely: the **Shipping checklist**, because "does this code work" isn't the question that matters here — "is this thing actually live, reachable, and safe to have live" is.
 
 ## What `M_deploy` actually does

@@ -1,9 +1,5 @@
 # 01 — Why This Course Has You Build, Not Watch
 
-🎬 Video: [`video-prompts.md#01-why-this-course-has-you-build`](video-prompts.md#01-why-this-course-has-you-build)
-
----
-
 Every course so far taught you the method's mechanics through one build someone else already finished — and each one already ended with an Exercise lesson sending you off to run the same steps on an idea of your own. So this isn't the first time you're building something. What's been missing is the chance to see the *whole* loop at once, on one continuous build, with enough guidance at every step that you're never stuck translating a generic instruction into your own case. The per-course Exercises are compressed by necessity — a checklist at the end of a course, covering ground you've already read about in detail. This course inverts that: ten lessons, each one small, each one telling you exactly what to run and what to expect before handing you back to your own idea.
 
 That matters because of a question the per-course Exercises can't fully answer on their own: how much of what you saw in Courses 1-4 was the *method* doing the work, versus the worked example being interesting? If a worked example turns out well, was that because the plugin is good at its job, or because the example was chosen to work well? Starting in Lesson 03, every lesson here ends with an explicit instruction — run this command now, on your own idea, then come back here for the next step. By the time you reach Lesson 09, you'll be looking at your own spec, your own demolition cycle, your own macro table, built end to end in one sitting instead of spread across four separate Exercises — and you'll be able to point at specific answers you gave that explain specific things in what got built.

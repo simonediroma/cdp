@@ -1,9 +1,5 @@
 # 05 — When a Bug Is Really a Missed Spike
 
-🎬 Video: [`video-prompts.md#05-bug-or-missed-spike`](video-prompts.md#05-bug-or-missed-spike)
-
----
-
 Course 3 Lesson 06 defined a spike: a macro marked `⏳ SPIKE PENDING` because there genuinely wasn't enough information to write a real implementation prompt. Some bugs aren't really implementation mistakes — they're spikes that should have been flagged and weren't, and the missing investigation surfaced later as a defect instead of earlier as an open question.
 
 ## The tell

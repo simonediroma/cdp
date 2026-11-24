@@ -43,10 +43,6 @@ By the end of this course you will be able to:
 
 Grounded in `skills/arch-init/SKILL.md`, `skills/spike-integrate/SKILL.md`, `skills/session-start/SKILL.md`, `skills/resume/SKILL.md`, and the FEATURE-ADDITION sections of `skills/spec-to-code-update/SKILL.md` and its `references/`.
 
-## Videos
-
-See [`video-prompts.md`](video-prompts.md). Visual identity: Course 2's blueprint template, with a second layer visibly growing on top of an existing structure, amber accent for "existing / do-not-touch."
-
 ## Unfamiliar term?
 
 Check [`../appendix/01-glossary.md`](../appendix/01-glossary.md) and [`../appendix/02-useful-resources.md`](../appendix/02-useful-resources.md).

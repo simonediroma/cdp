@@ -1,9 +1,5 @@
 # 01 — From PRD to Boilerplate — `/cdp:spec-to-code`
 
-🎬 Video: [`video-prompts.md#01-prd-to-boilerplate`](video-prompts.md#01-prd-to-boilerplate)
-
----
-
 Course 1 produced a hardened document, whichever of its three paths you took to get there. `/cdp:spec-to-code` is where the loop turns that document into an actual implementation plan — a step that doesn't exist in the bare CDP manifesto at all (the [Appendix's CDP Protocol deep dive](../appendix/cdp-protocol/00-index.md) never covers it, because that material is plugin-agnostic and this is where the plugin does something the manifesto doesn't specify).
 
 ## The gate you cannot skip

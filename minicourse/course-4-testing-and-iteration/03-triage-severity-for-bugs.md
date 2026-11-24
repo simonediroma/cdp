@@ -1,9 +1,5 @@
 # 03 — Triage Severity for Bugs
 
-🎬 Video: [`video-prompts.md#03-triage-severity-for-bugs`](video-prompts.md#03-triage-severity-for-bugs)
-
----
-
 The [Appendix's CDP Protocol deep dive](../appendix/cdp-protocol/00-index.md), Lesson 11, gave you three severities for spec vulnerabilities. The same three words, the same obligations, apply cleanly to a bug — you're just triaging a defect instead of a claim in a document.
 
 ## The scale, reused

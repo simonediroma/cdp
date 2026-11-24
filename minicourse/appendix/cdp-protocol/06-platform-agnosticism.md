@@ -1,9 +1,5 @@
 # 06 — Platform Agnosticism
 
-🎬 Video: [`video-prompts.md#06-platform-agnosticism`](video-prompts.md#06-platform-agnosticism)
-
----
-
 The CDP is platform-agnostic by design, and that's a deliberate value commitment — not an accident of how it happened to get built.
 
 Tying a method to one vendor (Claude, OpenAI, Google) or one product (a specific plugin, a specific chat app) creates two dependencies the protocol doesn't need: **vendor lock-in** (the method dies if the vendor changes terms) and **stack drift** (the method becomes unrunnable as the product evolves). The CDP is built to outlive both. It runs on any LLM that satisfies one operational fork: folder read/write access, OR a context window large enough to hold everything in one session — regardless of vendor.

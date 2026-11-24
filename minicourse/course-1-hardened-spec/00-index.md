@@ -40,10 +40,6 @@ By the end of this course you will be able to:
 
 Where a lesson describes the `claude-cdp` plugin's mechanics in detail, it's grounded in the corresponding `skills/*/SKILL.md` file in the [cdp claude plugin](https://github.com/simonediroma/cdp) repo — read those directly if you want the exact operational text an LLM executes. Where a lesson describes CDP's underlying method rather than the plugin's automation of it, it's grounded in `document/cdp-manifesto.md` and `document/cdp-foundations.md`, and taught in full in the [Appendix's CDP Protocol deep dive](../appendix/cdp-protocol/00-index.md).
 
-## Videos
-
-See [`video-prompts.md`](video-prompts.md) for one HeyGen script + on-screen text per lesson. Visual identity: blueprint/terminal-style slide background, blue accent on command and file names, red accent for vulnerability/attack callouts in Lesson 06 (see the [cdp claude plugin](https://github.com/simonediroma/cdp)'s `minicourse/README.md`).
-
 ## Unfamiliar term?
 
 Check [`../appendix/01-glossary.md`](../appendix/01-glossary.md) and [`../appendix/02-useful-resources.md`](../appendix/02-useful-resources.md) — MCP, Jira, deploy platforms, and more are covered there, not re-explained per lesson.

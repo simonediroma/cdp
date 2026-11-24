@@ -1,9 +1,5 @@
 # 03 — Run Your Own Onboarding
 
-🎬 Video: [`video-prompts.md#03-run-your-own-onboarding`](video-prompts.md#03-run-your-own-onboarding)
-
----
-
 You've got a domain in mind from Lesson 02. Now you run `/cdp:onboarding` on it. If you have no existing documents in your project folder, Phase 0's document scan finds nothing and you go straight into all seven questions, one at a time — the plugin confirms its understanding after each answer before moving to the next, exactly as Course 1 Lesson 05 described.
 
 ## What to expect from each question

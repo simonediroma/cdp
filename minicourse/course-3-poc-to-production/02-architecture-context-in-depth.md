@@ -1,9 +1,5 @@
 # 02 — `architecture-context.md` in Depth
 
-🎬 Video: [`video-prompts.md#02-architecture-context-in-depth`](video-prompts.md#02-architecture-context-in-depth)
-
----
-
 For FEATURE-ADDITION, `architecture-context.md` isn't a nice-to-have — Lesson 01's table already showed it: `/cdp:spec-to-code` stops and asks for it if it's missing. This lesson is about writing one that actually earns its keep, rather than one that technically exists but produces generic placeholders anyway.
 
 ## Why it exists at all

@@ -1,9 +1,5 @@
 # 09 — Phase 2: Demolition — R1, R2, the Facilitator
 
-🎬 Video: [`video-prompts.md#09-phase-2-demolition`](video-prompts.md#09-phase-2-demolition)
-
----
-
 Phase 2 is where the spec gets attacked. Two rules govern *every* round, no matter which persona is firing.
 
 ## R1 — Soft cap of about five vulnerabilities per cycle

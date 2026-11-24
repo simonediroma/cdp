@@ -18,27 +18,4 @@ A sixth folder, [`appendix/`](appendix/00-index.md), isn't a course — it's ref
 
 ## Format
 
-Each course is a folder of one markdown file per lesson, plus:
-
-- `00-index.md` — table of contents, learning objectives, how the course connects to the others
-- `video-prompts.md` — one entry per lesson: where the video sits in the lesson, its target length, and a ready-to-paste prompt for an AI video-generation tool (Sora, Runway, Pika, etc.)
-
-Every lesson file carries a one-line pointer to its video entry (`🎬 Video: video-prompts.md#0N-...`) — nothing is written without a place to check where its video goes.
-
-## Video approach
-
-Videos are built for **HeyGen** (AI presenter avatar + scene/background templates) — not abstract text-to-video motion graphics. Each `video-prompts.md` entry gives you the three inputs HeyGen actually takes:
-
-1. **Script** — the exact narration for the avatar to speak (~150 words/minute spoken pace; duration is derived from script length, not fixed upfront)
-2. **On-screen text** — the slide bullets/callouts to place beside the avatar, synced to what it's saying at that moment
-3. **Scene/background** — a consistent per-course template so all five courses read as one series with the same instructor
-
-| Course | Avatar & tone | Background / slide template | Accent color |
-|---|---|---|---|
-| 1 | Same avatar throughout — calm, instructional register | Blueprint/terminal-style slide background | Blue — flags command/file names; red for vulnerability/attack callouts in Lesson 06 |
-| 2 | Same avatar, slightly higher energy ("let's build") | Course 1's blueprint/terminal-style slide background | Blue — flags command/file names |
-| 3 | Same avatar | Course 2 template plus a visibly "existing" layer already on the slide | Amber — flags "existing / do-not-touch" |
-| 4 | Same avatar | Course 2 template plus a magnifying-glass/trace icon | Red, narrowing from broad symptom to root cause |
-| 5 | Same avatar, more direct register — talks to the viewer building along, not about a case study | Course 1-2's blueprint/terminal-style slide background | Green — flags each "now do this" instruction |
-
-Using one avatar across all five courses is deliberate — it reads as a single instructor teaching a five-part series, not five disconnected videos. The [Appendix's CDP Protocol deep dive](appendix/cdp-protocol/00-index.md) uses its own, separate template — a neutral professional background with a course-title watermark — since it's reference material, not part of the five-course sequence proper.
+Each course is a folder of one markdown file per lesson, plus `00-index.md` — table of contents, learning objectives, how the course connects to the others.

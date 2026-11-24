@@ -1,9 +1,5 @@
 # 02 — Meet Custom Scorecard, the App Category
 
-🎬 Video: [`video-prompts.md#02-meet-custom-scorecard`](video-prompts.md#02-meet-custom-scorecard)
-
----
-
 Before you open `/cdp:onboarding`, it helps to see the shape you're about to specialize into your own app. Strip away any specific domain and a Custom Scorecard is three ideas stacked on top of each other:
 
 1. **An entity you rate** — a wine, a candidate, a restaurant, an apartment you're considering. Whatever gets a new entry each time you use the app.

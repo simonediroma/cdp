@@ -1,9 +1,5 @@
 # 05 — Executing the Plan in Your Tool of Choice
 
-🎬 Video: [`video-prompts.md#05-executing-the-plan`](video-prompts.md#05-executing-the-plan)
-
----
-
 The boilerplate is generated. Now you actually build — and this is where "loop engineering" (Course 1, Lesson 01) stops being a diagram and becomes a session you run, one macro at a time.
 
 ## In Claude Code

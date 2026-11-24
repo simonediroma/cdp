@@ -1,9 +1,5 @@
 # 03 — `/cdp:arch-init`
 
-🎬 Video: [`video-prompts.md#03-arch-init`](video-prompts.md#03-arch-init)
-
----
-
 Writing `architecture-context.md` from a blank page, for a repo that already exists, means re-typing things Claude can just read. `/cdp:arch-init` generates the file by scanning your repo, querying Confluence if it's available, and only interviewing you for what it genuinely couldn't detect.
 
 ## Four sources, checked in parallel

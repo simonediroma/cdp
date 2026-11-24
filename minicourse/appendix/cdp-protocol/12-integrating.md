@@ -1,9 +1,5 @@
 # 12 — Integrating Resolutions
 
-🎬 Video: [`video-prompts.md#12-integrating`](video-prompts.md#12-integrating)
-
----
-
 A demolition round surfaces vulnerabilities; it doesn't fix them. Integrating is the separate step where resolved vulnerabilities actually become changes to the spec — and "separate" is deliberate: the persona attacks, it never edits.
 
 ## The manual procedure (no plugin)

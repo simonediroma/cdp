@@ -1,9 +1,5 @@
 # 05 — Run Your Demolition Cycle
 
-🎬 Video: [`video-prompts.md#05-run-your-demolition-cycle`](video-prompts.md#05-run-your-demolition-cycle)
-
----
-
 `/cdp:demolish` attacks one claim at a time, always in the same three-part shape: quote the exact claim from your spec, name the vulnerability category in bold brackets, state the defect in one to three sentences, close with *"How do you respond to this?"* No solutions are ever offered — that part is yours.
 
 ## What a strong versus weak response looks like

@@ -1,9 +1,5 @@
 # 01 — Why Bugs Need a Method Too
 
-🎬 Video: [`video-prompts.md#01-why-bugs-need-a-method`](video-prompts.md#01-why-bugs-need-a-method)
-
----
-
 Something breaks in your PoC. The fast instinct is to open the file, stare at it, change something that looks wrong, and move on if it seems to work now. That instinct isn't wrong to have — it's just not sufficient on its own, for exactly the reason Course 1 Lesson 01 gave for vibe coding: **improvisation has no memory and no gates.**
 
 ## The symptoms of ad-hoc bug fixing

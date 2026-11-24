@@ -1,9 +1,5 @@
 # 07 — Phase 0: Setup
 
-🎬 Video: [`video-prompts.md#07-phase-0-setup`](video-prompts.md#07-phase-0-setup)
-
----
-
 Before any generative or adversarial work happens, the CDP has a one-time setup phase. Two decisions and a set of prerequisites — get these wrong and everything downstream gets shakier.
 
 ## Declare your operating mode

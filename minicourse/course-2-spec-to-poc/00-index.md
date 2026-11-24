@@ -39,10 +39,6 @@ By the end of this course you will be able to:
 
 This course teaches the `claude-cdp` plugin as it currently behaves. Where a lesson describes a skill's mechanics in detail, it's grounded in the corresponding `skills/*/SKILL.md` file in the [cdp claude plugin](https://github.com/simonediroma/cdp) repo — read those directly if you want the exact operational text an LLM executes.
 
-## Videos
-
-See [`video-prompts.md`](video-prompts.md) for one HeyGen script + on-screen text per lesson. Visual identity: same avatar as Course 1, blueprint/terminal-style slide background, blue accent on command and file names (see the [cdp claude plugin](https://github.com/simonediroma/cdp)'s `minicourse/README.md`).
-
 ## Unfamiliar term?
 
 Check [`../appendix/01-glossary.md`](../appendix/01-glossary.md) and [`../appendix/02-useful-resources.md`](../appendix/02-useful-resources.md) — MCP, Jira, deploy platforms, and more are covered there, not re-explained per lesson.

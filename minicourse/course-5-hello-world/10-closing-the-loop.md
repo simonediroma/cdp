@@ -1,9 +1,5 @@
 # 10 — Closing the Loop
 
-🎬 Video: [`video-prompts.md#10-closing-the-loop`](video-prompts.md#10-closing-the-loop)
-
----
-
 ## What "done" looks like
 
 A live URL, and a written trace — from Lesson 09 — of at least four specific places where a different answer would have produced a different outcome. If you can't point to that trace, the loop technically ran but didn't prove anything: go back to whichever lesson feels thinnest (a demolition cycle that resolved too easily, a macro table you didn't actually check against your own spec) and press harder on it before calling this finished.

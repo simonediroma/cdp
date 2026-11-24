@@ -1,9 +1,5 @@
 # 03 — Anatomy of the Output — Two Tracks
 
-🎬 Video: [`video-prompts.md#03-anatomy-of-the-output`](video-prompts.md#03-anatomy-of-the-output)
-
----
-
 `/cdp:spec-to-code` produces the same content in two different shapes, depending on which IDE format you chose in Step 0b. Neither track is the "real" one — they're parallel, and this course treats them as equally valid choices.
 
 ## Side by side

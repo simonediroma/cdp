@@ -1,9 +1,5 @@
 # 17 — Exercise: Bootstrap a Mini Cycle
 
-🎬 Video: [`video-prompts.md#17-exercise`](video-prompts.md#17-exercise)
-
----
-
 This is a hands-on close to this deep dive — no plugin, just you, any capable LLM, and the manifesto. The goal is to feel the mechanics in your hands, whether or not you also run them through Course 1's `claude-cdp` plugin.
 
 ## What you'll need

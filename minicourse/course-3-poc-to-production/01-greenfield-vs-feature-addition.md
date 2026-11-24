@@ -1,9 +1,5 @@
 # 01 — GREENFIELD vs FEATURE-ADDITION
 
-🎬 Video: [`video-prompts.md#01-greenfield-vs-feature-addition`](video-prompts.md#01-greenfield-vs-feature-addition)
-
----
-
 Course 2 ran entirely in GREENFIELD mode: no existing code, no existing conventions, a clean folder and a scaffold macro (`M0`) to start it. Everything from here on runs in **FEATURE-ADDITION** mode: there's a real repo, real modules, real conventions someone (possibly a past version of you) already committed to. The plugin treats these as genuinely different modes, not the same process with extra steps.
 
 ## What's actually different

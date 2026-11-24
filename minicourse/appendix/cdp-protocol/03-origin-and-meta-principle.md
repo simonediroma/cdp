@@ -1,9 +1,5 @@
 # 03 — Origin and the Meta-Principle
 
-🎬 Video: [`video-prompts.md#03-origin-and-meta-principle`](video-prompts.md#03-origin-and-meta-principle)
-
----
-
 ## Where the CDP came from
 
 The CDP emerged from practice, not theory. It wasn't designed on a whiteboard and then tested — it was distilled from work already underway:

@@ -1,9 +1,5 @@
 # 14 — Manual Bootstrap on Any LLM
 
-🎬 Video: [`video-prompts.md#14-manual-bootstrap`](video-prompts.md#14-manual-bootstrap)
-
----
-
 This lesson is the practical payoff of Lesson 06's platform-agnosticism claim: you don't need the `claude-cdp` plugin, or even Claude, to run this protocol. You need the manifesto and a capable LLM.
 
 ## The kickoff prompt

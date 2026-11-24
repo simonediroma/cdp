@@ -50,10 +50,6 @@ By the end of this course you will be able to:
 
 Grounded in the [Appendix's CDP Protocol deep dive](../appendix/cdp-protocol/00-index.md)'s severity scale (§03) and mediated-resolution principle (§01 Phase 2 step 03), and in `skills/spec-to-code-update/references/osmani-skill-map.md` and `boilerplate-formats.md` for the gates already embedded in generated prompts — this course doesn't invent new plugin behavior, it reuses what Courses 1-3 already established.
 
-## Videos
-
-See [`video-prompts.md`](video-prompts.md). Visual identity: Course 2's blueprint template, magnifying-glass / trace-line motif, red accent narrowing from broad symptom to root cause.
-
 ## Unfamiliar term?
 
 Check [`../appendix/01-glossary.md`](../appendix/01-glossary.md) and [`../appendix/02-useful-resources.md`](../appendix/02-useful-resources.md).

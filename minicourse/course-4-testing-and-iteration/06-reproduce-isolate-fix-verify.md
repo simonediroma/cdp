@@ -1,9 +1,5 @@
 # 06 — The Reproduce → Isolate → Fix → Verify Loop
 
-🎬 Video: [`video-prompts.md#06-reproduce-isolate-fix-verify`](video-prompts.md#06-reproduce-isolate-fix-verify)
-
----
-
 Once Lesson 05 has ruled out "this is actually a missed spike," you're looking at a genuine implementation bug — and the loop for fixing it is a direct mapping onto TDD's RED-GREEN-REFACTOR, which is already in every MEDIUM and HIGH-risk macro prompt you generated.
 
 ## The mapping

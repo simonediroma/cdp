@@ -1,9 +1,5 @@
 # 01 — Why First Drafts Have Blind Spots
 
-🎬 Video: [`video-prompts.md#01-why-first-drafts-have-blind-spots`](video-prompts.md#01-why-first-drafts-have-blind-spots) — plays before you read, ~55s hook.
-
----
-
 Specifications drafted in isolation reliably have blind spots. Not occasionally — reliably. This is true regardless of what kind of project the spec belongs to, and regardless of whether you wrote it slowly with a coffee or asked an LLM to draft it for you in thirty seconds. A spec that looked complete to the person (or the prompt) that produced it still misses things systematically, in ways the author couldn't see from inside their own head. That isn't a claim about carelessness — a careful author still misses, because the failure mode is perspective, not attention. You cannot see your own blind spot by trying harder to look at it.
 
 ## Vibe coding vs. loop engineering

@@ -1,9 +1,5 @@
 # 10 — Exercise: Add a Real Feature to Your PoC
 
-🎬 Video: [`video-prompts.md#10-exercise`](video-prompts.md#10-exercise)
-
----
-
 Go back to the PoC you shipped at the end of Course 2. Pick one real feature it's genuinely missing — something a real user of that PoC would actually ask for, not a toy addition invented just to have something to build.
 
 ## The checklist

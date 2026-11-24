@@ -1,9 +1,5 @@
 # 08 — Long-Running Sessions — `/cdp:session-start`, `/cdp:resume`
 
-🎬 Video: [`video-prompts.md#08-long-running-sessions`](video-prompts.md#08-long-running-sessions)
-
----
-
 A PoC lives in close to one sitting. A real feature added to a real product doesn't — you come back to it across days, sometimes with other things having happened in between. These two commands exist for exactly that gap: one to open a session with intent, one to answer "where was I?" in four lines flat.
 
 ## `/cdp:session-start` — opening with intent

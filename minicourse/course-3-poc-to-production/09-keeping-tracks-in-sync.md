@@ -1,9 +1,5 @@
 # 09 — Keeping Both Tracks in Sync
 
-🎬 Video: [`video-prompts.md#09-keeping-tracks-in-sync`](video-prompts.md#09-keeping-tracks-in-sync)
-
----
-
 Course 2 Lesson 03 showed the Claude Code and Cursor tracks side by side, generated from the same spec. As the product grows through more FEATURE-ADDITION cycles, the question becomes: what does it take to keep both tracks honest as the codebase moves, especially if different people on the same team use different tools?
 
 ## What stays shared, always

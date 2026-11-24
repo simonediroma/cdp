@@ -1,9 +1,5 @@
 # 09 — `/cdp:session-start` and `/cdp:resume` for Bugfixing
 
-🎬 Video: [`video-prompts.md#09-session-commands-for-bugfixing`](video-prompts.md#09-session-commands-for-bugfixing)
-
----
-
 Course 3 Lesson 08 introduced these two commands for long-running feature work. They apply identically to a bug that outlives one sitting — nothing about their mechanics changes, only what you say when they ask.
 
 ## Opening a bugfix session with intent

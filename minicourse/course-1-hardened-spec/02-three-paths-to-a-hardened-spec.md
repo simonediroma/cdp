@@ -1,9 +1,5 @@
 # 02 — Three Paths to a Hardened Spec
 
-🎬 Video: [`video-prompts.md#02-three-paths-to-a-hardened-spec`](video-prompts.md#02-three-paths-to-a-hardened-spec)
-
----
-
 Lesson 01 named the problem: a spec nobody attacked has blind spots, and a not-organized draft is the fastest way to produce exactly that kind of spec. This lesson is about the fix — and there's more than one legitimate way to apply it. Nothing here says you must use the tool this course goes on to teach hands-on; it says you must do *something* structural instead of trusting a single draft.
 
 ## Path A — Solo iteration against a checklist

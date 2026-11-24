@@ -1,9 +1,5 @@
 # 07 — Spec-to-Code: Read Your Own Macro Table
 
-🎬 Video: [`video-prompts.md#07-spec-to-code-your-macro-table`](video-prompts.md#07-spec-to-code-your-macro-table)
-
----
-
 Your frozen spec from Lesson 06 goes into `/cdp:spec-to-code`. It passes the Gate — Spec Frozen check from Course 2 Lesson 01 because there's nothing left `[TO BE DEFINED]`. Since this is a brand-new project with no existing codebase, it runs in GREENFIELD mode: Step 1 analyzes your PRD, Step 1b runs Deploy Discovery, and Step 2 decomposes it into a macro table — exactly the mechanics Course 2 already taught. What's different here is that you're about to read a table shaped entirely by your own answers, not someone else's.
 
 ## Deploy Discovery, answered for real

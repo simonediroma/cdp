@@ -1,9 +1,5 @@
 # 08 — Tracking Iteration State
 
-🎬 Video: [`video-prompts.md#08-tracking-iteration-state`](video-prompts.md#08-tracking-iteration-state)
-
----
-
 A bugfix that spans more than one sitting has the same memory problem Course 3 Lesson 08 described for feature work — except worse, because a half-finished bug investigation is easy to forget the specifics of precisely when it matters most. `CLAUDE_MEMORY.md` (or `.cursor/rules/02-memory.mdc`) is where this gets tracked, using the same file you already have, not a new one.
 
 ## What to actually write down

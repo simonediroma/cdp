@@ -1,9 +1,5 @@
 # 04 — Augmented Humans, Not Agentic Replacement
 
-🎬 Video: [`video-prompts.md#04-augmented-humans`](video-prompts.md#04-augmented-humans)
-
----
-
 The CDP is built for **augmented humans** — not for autonomous agents with a human rubber-stamping at the margins. This is the single most important design commitment in the whole protocol, and it's worth being precise about what it means.
 
 > "The combination of humans and AI can yield more effective results compared to the separate performance of each component alone." — Loske & Klumpp, 2021

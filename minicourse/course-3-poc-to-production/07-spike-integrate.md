@@ -1,9 +1,5 @@
 # 07 — `/cdp:spike-integrate`
 
-🎬 Video: [`video-prompts.md#07-spike-integrate`](video-prompts.md#07-spike-integrate)
-
----
-
 Once a `docs/spike-M<N>.md` stub is filled in and marked `RESOLVED`, `/cdp:spike-integrate` is what turns that resolved investigation back into a real implementation prompt — unblocking the macro that was waiting on it.
 
 ## What it looks for

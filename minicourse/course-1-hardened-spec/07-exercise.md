@@ -1,9 +1,5 @@
 # 07 — Exercise: Harden a Real Spec, Your Way
 
-🎬 Video: [`video-prompts.md#07-exercise`](video-prompts.md#07-exercise)
-
----
-
 Pick a small, real idea — something you'd actually want to exist, small enough to have one core flow, big enough that a real review round wouldn't be ceremony. A single-user habit tracker, a small internal tool, a link shortener with one custom rule — anything with a real primary user and a real objective. This is the artifact you'll harden for the rest of this exercise, and the one Course 2 picks up as a frozen PRD.
 
 ## Choose your path from Lesson 02

@@ -1,9 +1,5 @@
 # 11 — Regression Discipline
 
-🎬 Video: [`video-prompts.md#11-regression-discipline`](video-prompts.md#11-regression-discipline)
-
----
-
 A fix that resolves today's bug and says nothing about tomorrow's recurrence isn't finished — it's paused. This lesson is about the last step every bugfix in this course owes: making sure the same class of bug can't come back silently.
 
 ## What "regression discipline" actually requires

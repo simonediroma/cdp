@@ -1,9 +1,5 @@
 # 02 — The Principle
 
-🎬 Video: [`video-prompts.md#02-the-principle`](video-prompts.md#02-the-principle)
-
----
-
 The CDP's answer to the blind-spot problem is one sentence: **controlled stress-testing through structured adversarial review.**
 
 Unpack that phrase and you get the whole method:

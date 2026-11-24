@@ -1,9 +1,5 @@
 # 05 — Scope: When to Use It, When Not To
 
-🎬 Video: [`video-prompts.md#05-scope`](video-prompts.md#05-scope)
-
----
-
 Lesson 01 already stated it plainly: the CDP is domain-agnostic. This lesson is where that claim gets its actual boundary — not "which industries" or "which project types" (there's no such list, because none is needed), but a boundary based on one property only.
 
 The CDP targets **textual artifacts that aim to describe or prescribe something coherently** — product specs, essays, long-form books, policy documents, methodological manifestos. The common property: it's a text an external reader (human or simulated) can read end to end and attack on its own terms. Notice what's absent from that definition: no reference to software, marketing, or any other domain. Any project, in any field, clears this bar the moment it produces something written that's meant to hold together.

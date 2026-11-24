@@ -1,9 +1,5 @@
 # 03 — Installing the Plugin
 
-🎬 Video: [`video-prompts.md#03-installing-the-plugin`](video-prompts.md#03-installing-the-plugin)
-
----
-
 Lesson 02 named CDP as the path this course teaches hands-on from here forward. This lesson is the on-ramp: getting the `claude-cdp` plugin installed and verified, so Lesson 05 has something to run. If you're following one of the other two paths from Lesson 02 instead, skip ahead to Chapter 2 — `/cdp:spec-to-code` only needs a frozen PRD, not one produced by this specific plugin.
 
 Two installation paths, both documented in the [cdp claude plugin](https://github.com/simonediroma/cdp)'s main `README.md`. Pick whichever matches how you work.

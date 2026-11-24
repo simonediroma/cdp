@@ -1,9 +1,5 @@
 # 13 — Exit Criteria and the Convergence Signal
 
-🎬 Video: [`video-prompts.md#13-exit-criteria`](video-prompts.md#13-exit-criteria)
-
----
-
 A spec is demolition-complete when all four of these are true:
 
 - [ ] It has completed at least **N** demolition rounds, where one round = one persona-cycle followed by its integrate. N defaults to **3**, fully configurable at project or organization level.

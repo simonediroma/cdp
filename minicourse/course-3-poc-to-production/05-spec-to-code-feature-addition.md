@@ -1,9 +1,5 @@
 # 05 — `/cdp:spec-to-code` in FEATURE-ADDITION Mode
 
-🎬 Video: [`video-prompts.md#05-spec-to-code-feature-addition`](video-prompts.md#05-spec-to-code-feature-addition)
-
----
-
 Same command as Course 2 Lesson 01, same Spec Frozen gate — but the process it runs is the FEATURE-ADDITION variant, and it produces a *delta*: what's new, not what already exists.
 
 ## Step 1 — analyze PRD + architecture context together

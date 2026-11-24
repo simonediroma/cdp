@@ -1,9 +1,5 @@
 # 04 — The agent-skills Rules: Completeness and the Coding Loops They Define
 
-🎬 Video: [`video-prompts.md#04-the-agent-skills-rules`](video-prompts.md#04-the-agent-skills-rules)
-
----
-
 Every macro prompt you've seen since Lesson 01 carries embedded engineering discipline — Doubt-Driven Review, TDD, a security checklist, a 5-axis review. The plugin's own reference file for these gates calls them "Osmani behaviors" — an internal label pointing at a person's name where a repo name belongs. This lesson uses the repo's actual name instead, traces the label to its confirmed source, and covers what these rules make you do in a loop, and — honestly — how completely they're actually implemented in what gets generated.
 
 ## What "Osmani" actually is

@@ -1,9 +1,5 @@
 # 04 — The Pre-PR Gate as First Line of Defense
 
-🎬 Video: [`video-prompts.md#04-pre-pr-gate-first-line-of-defense`](video-prompts.md#04-pre-pr-gate-first-line-of-defense)
-
----
-
 The best bug to deal with is the one that never merges in the first place. This lesson is about treating the Pre-PR Gate — the same one from Lesson 02 — as an actual line of defense, not a checklist you tick through on autopilot on your way to merging.
 
 ## What "actually running the gate" looks like

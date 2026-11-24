@@ -1,9 +1,5 @@
 # 06 — Integrate and Freeze Your Spec
 
-🎬 Video: [`video-prompts.md#06-integrate-and-freeze-your-spec`](video-prompts.md#06-integrate-and-freeze-your-spec)
-
----
-
 `/cdp:integrate` takes each `resolved` issue from your demolition cycle and applies it to `project-spec.md`, one at a time: it summarizes what you said, identifies which section needs updating, shows you an ORIGINAL/PROPOSED diff, and waits for your explicit confirmation before touching anything. If a change might ripple into another section — a repositioning that could also affect tone, or a redefined objective that could affect the value proposition — it flags that cascade and asks whether to handle it now or leave it for later.
 
 ## A fact worth knowing before you watch your own version bump

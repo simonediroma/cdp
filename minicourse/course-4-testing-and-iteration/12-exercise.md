@@ -1,9 +1,5 @@
 # 12 — Exercise: Triage, Fix, and Close a Real Bug
 
-🎬 Video: [`video-prompts.md#12-exercise`](video-prompts.md#12-exercise)
-
----
-
 Course 3 Lesson 10 asked you to note a real bug you hit while adding a feature, instead of fixing it ad hoc on the spot. Use that one if you have it. If you don't, find or introduce a genuine bug in your Course 2 PoC or Course 3 feature — something with a real, reproducible failure, not a contrived toy.
 
 ## The checklist

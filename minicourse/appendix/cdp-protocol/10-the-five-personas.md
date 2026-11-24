@@ -1,9 +1,5 @@
 # 10 — The Five Reference Personas
 
-🎬 Video: [`video-prompts.md#10-the-five-personas`](video-prompts.md#10-the-five-personas)
-
----
-
 Each persona represents a real stakeholder that a spec author systematically underweights. One persona per round; one angle of attack per round.
 
 | # | Persona | Angle of Attack | Key Question |
