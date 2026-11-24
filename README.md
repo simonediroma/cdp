@@ -3,6 +3,8 @@
 Claude Desktop plugin for coworking on any project spec. Iteratively builds and refines `project-spec.md` through onboarding, demolition, and integration cycles.
 
 > **Open source — MIT licence.** See [`LICENSE`](LICENSE).
+>
+> **Docs site:** the minicourse, manifesto and foundations are published at <https://simonediroma.github.io/cdp/> — build locally with `./scripts/build-site.sh serve`.
 
 ---
 

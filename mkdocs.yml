@@ -1,0 +1,41 @@
+site_name: cdp — Constructive Demolition Protocol
+site_description: Harden any project spec through adversarial critique cycles, then carry it to UX, mockups and code.
+site_url: https://simonediroma.github.io/cdp/
+repo_url: https://github.com/simonediroma/cdp
+repo_name: simonediroma/cdp
+docs_dir: .site-src
+site_dir: site
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle: { icon: material/brightness-7, name: Dark mode }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle: { icon: material/brightness-4, name: Light mode }
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - toc: { permalink: true }
+  - pymdownx.superfences:
+      custom_fences:
+        - { name: mermaid, class: mermaid, format: !!python/name:pymdownx.superfences.fence_code_format }
+
+validation:
+  links:
+    not_found: warn
+    absolute_links: relative_to_docs
+    unrecognized_links: info
