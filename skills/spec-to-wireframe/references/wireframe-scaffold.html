@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireframe</title>
+<!--
+  cdp · spec-to-wireframe scaffold
+  ================================
+  This shell is finished. You fill ONLY `window.WF` at the bottom of the file
+  and delete the worked example. Do not restyle the shell, do not add a
+  framework, do not introduce classes outside the `wf-*` set.
+
+  Hard constraints, checked mechanically by the skill's self-check:
+    · zero network — no CDN, no remote font, no external image, no external script
+    · greyscale only, plus the two muted semantic tones (--wf-alert, --wf-ok)
+    · system fonts — a wireframe must not imply a typeface
+    · opens from disk with the network off
+-->
+<style>
+  :root{
+    --wf-0:#ffffff; --wf-1:#f7f7f8; --wf-2:#eeeef0; --wf-3:#e2e2e5;
+    --wf-4:#c9c9cf; --wf-5:#9a9aa3; --wf-6:#6b6b74; --wf-7:#3d3d44; --wf-8:#1c1c20;
+    --wf-alert:#8a6a5c; --wf-ok:#5c7a63;
+    --wf-rail:280px; --wf-r:3px;
+    --wf-mono:ui-monospace,"DejaVu Sans Mono",Menlo,Consolas,monospace;
+    --wf-sans:system-ui,-apple-system,"Segoe UI","Liberation Sans",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;font-family:var(--wf-sans);color:var(--wf-8);background:var(--wf-2);display:flex}
+
+  /* ---------- banner ---------- */
+  .wf-banner{position:fixed;inset:0 0 auto 0;z-index:50;background:var(--wf-8);color:var(--wf-1);
+    font-size:11px;letter-spacing:.03em;padding:7px 14px;display:flex;gap:14px;align-items:center}
+  .wf-banner b{font-weight:600}
+  .wf-banner span{color:var(--wf-4)}
+
+  /* ---------- rail ---------- */
+  .wf-rail{width:var(--wf-rail);flex:0 0 var(--wf-rail);height:100vh;overflow-y:auto;
+    background:var(--wf-1);border-right:1px solid var(--wf-3);padding:44px 0 32px}
+  .wf-rail h1{font-size:13px;margin:12px 16px 2px;letter-spacing:-.01em}
+  .wf-rail .wf-sub{font-size:11px;color:var(--wf-6);margin:0 16px 14px}
+  .wf-group{font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--wf-5);
+    margin:18px 16px 6px;font-weight:600}
+  .wf-nav a{display:block;padding:6px 16px;font-size:12px;color:var(--wf-7);text-decoration:none;
+    border-left:2px solid transparent}
+  .wf-nav a:hover{background:var(--wf-2)}
+  .wf-nav a.on{background:var(--wf-2);border-left-color:var(--wf-8);font-weight:600}
+  .wf-nav a .wf-tag{font-size:9px;color:var(--wf-5);margin-left:5px}
+
+  .wf-pick{margin:0 16px 4px}
+  .wf-pick label{display:block;font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;
+    color:var(--wf-5);font-weight:600;margin-bottom:5px}
+  .wf-pick select{width:100%;font:inherit;font-size:12px;padding:5px 7px;border:1px solid var(--wf-4);
+    border-radius:var(--wf-r);background:var(--wf-0);color:var(--wf-8)}
+
+  /* ---------- stage ---------- */
+  .wf-stage{flex:1;height:100vh;overflow-y:auto;padding:60px 24px 64px;display:flex;
+    flex-direction:column;align-items:center;gap:18px}
+
+  .wf-device{width:390px;flex:0 0 auto;background:var(--wf-0);border:9px solid var(--wf-8);
+    border-radius:26px;overflow:hidden;position:relative;box-shadow:0 8px 28px rgba(0,0,0,.14)}
+  .wf-device::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);
+    width:108px;height:20px;background:var(--wf-8);border-radius:0 0 11px 11px;z-index:3}
+  .wf-screen{height:720px;overflow-y:auto;padding-top:26px;background:var(--wf-0)}
+
+  .wf-note{width:390px;font-size:11.5px;line-height:1.5;color:var(--wf-7);background:var(--wf-1);
+    border-left:2px solid var(--wf-5);padding:9px 12px;border-radius:0 var(--wf-r) var(--wf-r) 0}
+  .wf-note b{display:block;font-size:9.5px;text-transform:uppercase;letter-spacing:.09em;
+    color:var(--wf-5);margin-bottom:3px}
+  .wf-note code{font-family:var(--wf-mono);font-size:10.5px;background:var(--wf-3);padding:0 3px;border-radius:2px}
+
+  /* ---------- primitives ---------- */
+  .wf-top{display:flex;align-items:center;gap:9px;padding:11px 14px;border-bottom:1px solid var(--wf-3);
+    background:var(--wf-1);position:sticky;top:0;z-index:2}
+  .wf-top .wf-t{font-size:13px;font-weight:600;flex:1}
+  .wf-back{width:22px;height:22px;border:1px solid var(--wf-4);border-radius:var(--wf-r);
+    display:grid;place-items:center;font-size:12px;color:var(--wf-6);cursor:pointer;background:var(--wf-0)}
+
+  .wf-body{padding:14px}
+  .wf-h{font-size:15px;font-weight:600;margin:0 0 4px}
+  .wf-p{font-size:12.5px;line-height:1.5;color:var(--wf-7);margin:0 0 12px}
+  .wf-lbl{font-size:9.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--wf-5);
+    font-weight:600;margin:16px 0 6px}
+
+  .wf-btn{display:block;width:100%;text-align:center;font:inherit;font-size:13px;font-weight:600;
+    padding:11px;border-radius:var(--wf-r);cursor:pointer;margin-bottom:8px;border:1px solid var(--wf-8)}
+  .wf-btn.primary{background:var(--wf-8);color:var(--wf-0)}
+  .wf-btn.secondary{background:var(--wf-0);color:var(--wf-8)}
+  .wf-btn.ghost{background:transparent;color:var(--wf-6);border-color:transparent;text-decoration:underline}
+
+  .wf-card{border:1px solid var(--wf-3);border-radius:var(--wf-r);padding:12px;margin-bottom:9px;background:var(--wf-0)}
+  .wf-card .wf-ct{font-size:12.5px;font-weight:600;margin-bottom:3px}
+  .wf-card .wf-cs{font-size:11.5px;color:var(--wf-6)}
+
+  .wf-row{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--wf-2)}
+  .wf-row .wf-rt{flex:1;font-size:12.5px}
+  .wf-row .wf-rv{font-size:12.5px;color:var(--wf-6);font-family:var(--wf-mono)}
+
+  .wf-field{margin-bottom:10px}
+  .wf-field .wf-fl{font-size:11px;color:var(--wf-6);margin-bottom:4px}
+  .wf-field .wf-fb{border:1px solid var(--wf-4);border-radius:var(--wf-r);padding:10px 11px;
+    font-size:12.5px;color:var(--wf-7);background:var(--wf-0)}
+  .wf-field.err .wf-fb{border-color:var(--wf-alert)}
+  .wf-field .wf-fe{font-size:11px;color:var(--wf-alert);margin-top:4px}
+
+  .wf-icon{width:34px;height:34px;background:var(--wf-3);border-radius:var(--wf-r);flex:0 0 34px}
+  .wf-thumb{width:100%;height:120px;background:var(--wf-3);border-radius:var(--wf-r);margin-bottom:10px;
+    display:grid;place-items:center;color:var(--wf-5);font-size:11px}
+
+  .wf-msg{border:1px solid var(--wf-4);border-left-width:3px;border-radius:var(--wf-r);padding:10px 12px;
+    font-size:12px;line-height:1.45;margin-bottom:10px;background:var(--wf-1)}
+  .wf-msg.alert{border-left-color:var(--wf-alert)}
+  .wf-msg.ok{border-left-color:var(--wf-ok)}
+
+  .wf-empty{text-align:center;padding:46px 18px;color:var(--wf-5)}
+  .wf-empty .wf-eb{width:52px;height:52px;background:var(--wf-3);border-radius:50%;margin:0 auto 12px}
+  .wf-empty .wf-et{font-size:13px;color:var(--wf-6);margin-bottom:4px;font-weight:600}
+  .wf-empty .wf-ep{font-size:11.5px}
+
+  .wf-skel{height:12px;background:var(--wf-3);border-radius:2px;margin-bottom:8px}
+  .wf-skel.s{width:55%} .wf-skel.m{width:78%}
+
+  /* ---------- flow map ---------- */
+  .wf-map{display:none;width:100%;max-width:1080px}
+  body.map .wf-map{display:block}
+  body.map .wf-device,body.map .wf-note{display:none}
+  .wf-map h2{font-size:14px;margin:0 0 4px}
+  .wf-map .wf-mp{font-size:12px;color:var(--wf-6);margin:0 0 20px}
+  .wf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:18px}
+  .wf-mini{cursor:pointer}
+  .wf-mini .wf-mf{border:5px solid var(--wf-8);border-radius:12px;height:224px;overflow:hidden;background:var(--wf-0)}
+  .wf-mini .wf-mi{width:390px;height:720px;transform:scale(.293);transform-origin:0 0;pointer-events:none}
+  .wf-mini .wf-mn{font-size:11px;margin-top:6px;color:var(--wf-7);font-weight:600}
+  .wf-mini .wf-me{font-size:10px;color:var(--wf-5);font-family:var(--wf-mono)}
+  .wf-edges{margin-top:26px;font-size:11.5px;font-family:var(--wf-mono);color:var(--wf-6);line-height:1.8}
+</style>
+</head>
+<body>
+
+<div class="wf-banner">
+  <b id="wf-bt">Wireframe</b>
+  <span id="wf-bm"></span>
+  <span style="margin-left:auto">lo-fi · non è un design · non è codice di produzione</span>
+</div>
+
+<nav class="wf-rail">
+  <h1 id="wf-title">—</h1>
+  <p class="wf-sub" id="wf-meta">—</p>
+  <div class="wf-pick" id="wf-uc-wrap">
+    <label>Profilo dati</label>
+    <select id="wf-uc"></select>
+  </div>
+  <div class="wf-pick" id="wf-var-wrap" style="display:none">
+    <label>Variante</label>
+    <select id="wf-var"></select>
+  </div>
+  <div class="wf-nav" id="wf-nav"></div>
+  <div class="wf-group">Vista</div>
+  <div class="wf-nav"><a href="#__map__" id="wf-maplink">Mappa del flusso</a></div>
+</nav>
+
+<main class="wf-stage">
+  <div class="wf-device"><div class="wf-screen" id="wf-screen"></div></div>
+  <div class="wf-note" id="wf-note"></div>
+  <section class="wf-map" id="wf-map"></section>
+</main>
+
+<script>
+/* ===== primitives — return HTML strings ===== */
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const go  = id => `onclick="location.hash='${id}'"`;
+
+function wfTopBar(o={}){ return `<div class="wf-top">${o.back?`<div class="wf-back" onclick="history.back()">&#8249;</div>`:''}<div class="wf-t">${esc(o.title||'')}</div>${o.right?`<div class="wf-icon" style="width:22px;height:22px;flex-basis:22px"></div>`:''}</div>`; }
+function wfBody(html){ return `<div class="wf-body">${html}</div>`; }
+function wfH(t){ return `<p class="wf-h">${esc(t)}</p>`; }
+function wfP(t){ return `<p class="wf-p">${esc(t)}</p>`; }
+function wfLabel(t){ return `<div class="wf-lbl">${esc(t)}</div>`; }
+function wfBtn(t,k='primary',o={}){ return `<button class="wf-btn ${k}" ${o.go?go(o.go):''}>${esc(t)}</button>`; }
+function wfCard(t,s,o={}){ return `<div class="wf-card" ${o.go?go(o.go):''}><div class="wf-ct">${esc(t)}</div>${s?`<div class="wf-cs">${esc(s)}</div>`:''}</div>`; }
+function wfRow(t,v,o={}){ return `<div class="wf-row" ${o.go?go(o.go):''}>${o.icon?'<div class="wf-icon"></div>':''}<div class="wf-rt">${esc(t)}</div><div class="wf-rv">${esc(v??'')}</div></div>`; }
+function wfField(l,v,o={}){ return `<div class="wf-field ${o.error?'err':''}"><div class="wf-fl">${esc(l)}</div><div class="wf-fb">${esc(v||'')}</div>${o.error?`<div class="wf-fe">${esc(o.error)}</div>`:''}</div>`; }
+function wfIcon(){ return `<div class="wf-icon"></div>`; }
+function wfThumb(l='immagine'){ return `<div class="wf-thumb">${esc(l)}</div>`; }
+function wfMsg(t,k=''){ return `<div class="wf-msg ${k}">${esc(t)}</div>`; }
+function wfEmpty(t,p,o={}){ return `<div class="wf-empty"><div class="wf-eb"></div><div class="wf-et">${esc(t)}</div><div class="wf-ep">${esc(p||'')}</div>${o.cta?`<div style="margin-top:16px">${wfBtn(o.cta,'secondary',{go:o.go})}</div>`:''}</div>`; }
+function wfLoading(n=4){ return `<div class="wf-body">${Array.from({length:n},(_,i)=>`<div class="wf-skel ${i%3===0?'s':i%3===1?'m':''}"></div>`).join('')}</div>`; }
+
+/* ===== runtime ===== */
+const S = { uc:0, variant:null, id:null };
+
+function screens(){
+  return WF.screens.filter(s => !s.availableIn || !S.variant || s.availableIn.includes(S.variant));
+}
+function ctx(){
+  return { uc: WF.useCases[S.uc], variant: S.variant, data: WF.useCases[S.uc].data || {} };
+}
+function render(id){
+  const list = screens();
+  const s = list.find(x => x.id === id) || list[0];
+  if(!s) return;
+  S.id = s.id;
+  document.getElementById('wf-screen').innerHTML = s.render(ctx());
+  const n = document.getElementById('wf-note');
+  n.innerHTML = s.note ? `<b>${esc(s.name)}</b>${esc(s.note)}` : '';
+  n.style.display = s.note ? '' : 'none';
+  document.querySelectorAll('#wf-nav a').forEach(a => a.classList.toggle('on', a.dataset.id === s.id));
+  document.getElementById('wf-bm').textContent =
+    `${s.name} · ${WF.useCases[S.uc].name}${S.variant?' · '+S.variant:''}`;
+}
+function buildNav(){
+  const byCluster = {};
+  screens().forEach(s => (byCluster[s.cluster || '—'] ||= []).push(s));
+  document.getElementById('wf-nav').innerHTML = Object.entries(byCluster).map(([c, list]) =>
+    `<div class="wf-group">${esc(c)}</div>` + list.map(s =>
+      `<a href="#${s.id}" data-id="${s.id}">${esc(s.name)}${s.state?`<span class="wf-tag">${esc(s.state)}</span>`:''}</a>`
+    ).join('')
+  ).join('');
+}
+function buildMap(){
+  const list = screens();
+  document.getElementById('wf-map').innerHTML =
+    `<h2>Mappa del flusso</h2><p class="wf-mp">Ogni schermata del registry, alla stessa scala. Le transizioni sono sotto.</p>
+     <div class="wf-grid">${list.map(s=>`
+       <div class="wf-mini" onclick="location.hash='${s.id}'">
+         <div class="wf-mf"><div class="wf-mi">${s.render(ctx())}</div></div>
+         <div class="wf-mn">${esc(s.name)}</div>
+         <div class="wf-me">${esc(s.id)}</div>
+       </div>`).join('')}</div>
+     <div class="wf-edges">${(WF.flow||[]).map(e=>`${esc(e.from)} &rarr; ${esc(e.to)}${e.on?'  ('+esc(e.on)+')':''}`).join('<br>')}</div>`;
+}
+function route(){
+  const h = location.hash.slice(1);
+  const map = h === '__map__';
+  document.body.classList.toggle('map', map);
+  if(map){ buildMap(); document.getElementById('wf-bm').textContent = 'Mappa del flusso'; }
+  else render(h);
+}
+function boot(){
+  document.title = WF.meta.title;
+  document.getElementById('wf-title').textContent = WF.meta.title;
+  document.getElementById('wf-bt').textContent = WF.meta.title;
+  document.getElementById('wf-meta').textContent =
+    `${WF.meta.source} · ${WF.meta.date}${WF.meta.status?' · '+WF.meta.status:''}`;
+
+  const uc = document.getElementById('wf-uc');
+  uc.innerHTML = WF.useCases.map((u,i)=>`<option value="${i}">${esc(u.name)}</option>`).join('');
+  uc.onchange = e => { S.uc = +e.target.value; buildNav(); route(); };
+  if(WF.useCases.length < 2) document.getElementById('wf-uc-wrap').style.display = 'none';
+
+  if(WF.variants && WF.variants.length){
+    const v = document.getElementById('wf-var');
+    S.variant = WF.variants[0];
+    v.innerHTML = WF.variants.map(x=>`<option>${esc(x)}</option>`).join('');
+    v.onchange = e => { S.variant = e.target.value; buildNav(); route(); };
+    document.getElementById('wf-var-wrap').style.display = '';
+  }
+  buildNav();
+  window.addEventListener('hashchange', route);
+  route();
+}
+
+/* =======================================================================
+   WORKED EXAMPLE — delete everything below and replace with the real WF.
+   Kept only to show the shape each key takes.
+   ======================================================================= */
+window.WF = {
+  meta: {
+    title: 'Esempio — elenco e dettaglio',
+    source: 'ux-brief.md',
+    date: '2026-09-21',
+    status: 'draft'
+  },
+
+  // Data profiles: what changes on screen, not how it looks.
+  useCases: [
+    { name: 'Dati completi', data: { items: [
+        { t: 'Prima voce', v: '128,00 €' }, { t: 'Seconda voce', v: '64,50 €' }, { t: 'Terza voce', v: '12,00 €' }] } },
+    { name: 'Dato parziale', data: { items: [{ t: 'Prima voce', v: null }] } },
+    { name: 'Nessun dato',   data: { items: [] } }
+  ],
+
+  // Omit the key entirely when there is nothing to compare.
+  variants: null,
+
+  screens: [
+    {
+      id: 'list', name: 'Elenco', cluster: 'Flusso principale',
+      note: 'Punto di ingresso. Serve R1 (l’utente vede le proprie voci) e R3 (accesso al dettaglio).',
+      render: c => wfTopBar({ title: 'Le tue voci' }) + (
+        c.data.items.length === 0
+          ? wfEmpty('Non c’è ancora nulla', 'Quando arriverà una voce, la trovi qui.', { cta: 'Aggiorna', go: 'list' })
+          : wfBody(c.data.items.map(i => wfRow(i.t, i.v ?? '—', { icon: true, go: 'detail' })).join('')
+                   + wfBtn('Vedi il dettaglio', 'primary', { go: 'detail' }))
+      )
+    },
+    {
+      id: 'detail', name: 'Dettaglio', cluster: 'Flusso principale',
+      note: 'Serve R3. Un valore assente si mostra come —, mai come zero: R5 dice che zero e sconosciuto non sono la stessa cosa.',
+      render: c => wfTopBar({ title: 'Dettaglio', back: true }) + wfBody(
+        wfH(c.data.items[0]?.t || 'Voce') +
+        wfP('Riga di contesto che spiega cosa sta guardando l’utente.') +
+        wfLabel('Valori') +
+        wfRow('Importo', c.data.items[0]?.v ?? '—') +
+        wfRow('Stato', 'Attivo') +
+        wfBtn('Azione principale', 'primary') + wfBtn('Azione secondaria', 'secondary')
+      )
+    },
+    {
+      id: 'list-loading', name: 'Elenco', state: 'caricamento', cluster: 'Stati',
+      note: 'Stato di caricamento dell’elenco. Il brief lo implica in §4; nessun requisito lo nomina.',
+      render: () => wfTopBar({ title: 'Le tue voci' }) + wfLoading(5)
+    },
+    {
+      id: 'list-error', name: 'Elenco', state: 'errore', cluster: 'Stati',
+      note: 'Serve R7. Il brief dice che l’esperienza degrada senza rumore: nessun dato tecnico a schermo.',
+      render: () => wfTopBar({ title: 'Le tue voci' }) + wfBody(
+        wfMsg('Non riusciamo a caricare le voci. Riprova tra poco.', 'alert') + wfBtn('Riprova', 'secondary', { go: 'list' })
+      )
+    }
+  ],
+
+  flow: [
+    { from: 'list', to: 'detail', on: 'tap su una riga' },
+    { from: 'list-loading', to: 'list', on: 'dati arrivati' },
+    { from: 'list-error', to: 'list', on: 'riprova' }
+  ]
+};
+
+boot();
+</script>
+</body>
+</html>

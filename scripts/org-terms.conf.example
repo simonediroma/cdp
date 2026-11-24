@@ -1,0 +1,44 @@
+# org-terms.conf — what check-core-clean.sh scans for.
+#
+# Copy to `scripts/org-terms.conf` and fill in your organization's real terms.
+# That file is gitignored: naming the organization in a committed file would
+# leak it the moment the repository is published, which is the exact thing this
+# check exists to prevent. Keep the filled copy private — in the overlay plugin,
+# in a password manager, or simply untracked.
+#
+# Format, one rule per line:
+#
+#   <id>|<BLOCK|WARN>|<description>|<extended regex>
+#
+#   BLOCK  never publishable — it belongs in the overlay plugin
+#   WARN   a judgement call — confirm it is genuinely generic before publishing
+#
+# Lines starting with # and blank lines are ignored. The regex is passed to
+# `grep -E`, so escape dots you mean literally and use `|` inside a group, never
+# at the top level of the pattern (the top-level `|` separates the fields).
+
+# --- identity -----------------------------------------------------------------
+
+org-name|BLOCK|organization named|(ExampleCorp|example\.com)
+corp-email|BLOCK|corporate email address|[a-zA-Z0-9._%+-]+@example\.com
+
+# --- internal systems ---------------------------------------------------------
+# Identifiers whose access is gated by an ACL are still infrastructure detail:
+# they name what exists and where, which is not yours to publish.
+
+confluence|BLOCK|Confluence space or page id|(CONFLUENCE_[A-Z_]+[[:space:]]*=|spaceId[[:space:]]*[0-9]{6,})
+drive|BLOCK|Google Drive file or folder id|drive\.google\.com/(drive/folders|file/d)/[A-Za-z0-9_-]{20,}
+jira|BLOCK|internal Jira project key|\b(PROJ|DSP)-[0-9]{3,}\b
+internal-host|BLOCK|internal hostname|[a-z0-9-]+\.(internal|corp|intranet)\b
+
+# --- brand and design ---------------------------------------------------------
+
+design-system|WARN|named design system|(ExampleCorp Design System|\bXDS\b)
+ds-ids|WARN|bare design-system component id|data-[a-z]+-page="[0-9]{9,}"
+
+# --- posture ------------------------------------------------------------------
+# A regulatory stance describes the organization, not the tool. Generic advice
+# about handling personal data is fine in core; "we are a regulated operator
+# under X" is not.
+
+regulatory|WARN|org regulatory posture|(\bDORA\b|EU AI Act|regulated (financial )?operator)

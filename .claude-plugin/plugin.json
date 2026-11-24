@@ -1,0 +1,19 @@
+{
+  "name": "cdp",
+  "description": "Structured Demolition Protocol for iteratively hardening any project specification through onboarding, critique, and integration cycles.",
+  "version": "4.1.0",
+  "author": {
+    "name": "simone di roma",
+    "email": "simone.razzano@gmail.com"
+  },
+  "homepage": "https://github.com/simonediroma/cdp",
+  "repository": "https://github.com/simonediroma/cdp",
+  "license": "MIT",
+  "keywords": [
+    "demolition",
+    "cowork",
+    "cdp",
+    "spec"
+  ],
+  "category": "productivity"
+}

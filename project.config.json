@@ -1,0 +1,22 @@
+{
+  "project_name": "",
+  "project_type": "",
+  "output_language": "en",
+  "files": {
+    "project_spec": "project-spec.md",
+    "project_memory": "cdp-memory.md",
+    "demolition_history": "demolition-history.md",
+    "risk_register": "risk-register.md",
+    "personas": "personas.md",
+    "sessions_dir": "sessions/"
+  },
+  "design_system": {
+    "name": "",
+    "docs": "",
+    "inventory": "",
+    "tokens": "",
+    "figma_file": "",
+    "storybook": "",
+    "live_site": ""
+  }
+}

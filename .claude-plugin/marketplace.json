@@ -1,0 +1,20 @@
+{
+  "name": "simonediroma-cdp",
+  "owner": {
+    "name": "Simone Di Roma",
+    "email": "simone.razzano@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "cdp",
+      "source": {
+        "source": "github",
+        "repo": "simonediroma/cdp"
+      },
+      "version": "4.1.0",
+      "description": "Structured Demolition Protocol — iteratively hardens any project specification through critique cycles.",
+      "category": "productivity",
+      "keywords": ["demolition", "cowork", "cdp", "spec"]
+    }
+  ]
+}
