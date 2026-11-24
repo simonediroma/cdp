@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4F5BD5"/><stop offset="1" stop-color="#2A2F8F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="220" fill="url(#bg)"/>
+  <!-- spec page, split by a crack: left half -->
+  <path d="M300 220 H560 L520 390 L590 470 L500 620 L560 804 H300 Q270 804 270 774 V250 Q270 220 300 220 Z" fill="#FFFFFF"/>
+  <!-- right half, pushed slightly away -->
+  <path d="M592 220 H650 L762 332 V774 Q762 804 732 804 H592 L532 620 L622 470 L552 390 Z" fill="#FFFFFF" transform="translate(22 0)"/>
+  <!-- folded corner -->
+  <path d="M672 220 V332 H784 Z" fill="#C9CDF5"/>
+  <!-- spec lines -->
+  <g stroke="#4F5BD5" stroke-width="34" stroke-linecap="round">
+    <line x1="340" y1="330" x2="470" y2="330"/>
+    <line x1="340" y1="430" x2="500" y2="430"/>
+    <line x1="340" y1="530" x2="480" y2="530"/>
+    <line x1="660" y1="430" x2="710" y2="430"/>
+    <line x1="660" y1="530" x2="710" y2="530"/>
+  </g>
+  <!-- hardened: check badge -->
+  <circle cx="742" cy="760" r="118" fill="#22C55E" stroke="#2A2F8F" stroke-width="28"/>
+  <path d="M688 762 L728 802 L802 724" fill="none" stroke="#FFFFFF" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></body></html>
