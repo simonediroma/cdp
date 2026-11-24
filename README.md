@@ -1,6 +1,6 @@
-# cdp (constructive demolition protocol) — Claude Desktop Plugin
+# cdp (constructive demolition protocol) — Claude Plugin
 
-Claude Desktop plugin for coworking on any project spec. Iteratively builds and refines `project-spec.md` through onboarding, demolition, and integration cycles.
+Claude plugin for coworking on any project spec — runs on **Cowork**, **Claude Code** and **cloud sessions**. Iteratively builds and refines `project-spec.md` through onboarding, demolition, and integration cycles.
 
 > **Open source — MIT licence.** See [`LICENSE`](LICENSE).
 >
@@ -20,41 +20,26 @@ This repository shares the method that let me ship working software in under 48 
 
 ---
 
-## Installation on Claude Desktop
+## Installation
 
-### Method 1 — Marketplace (recommended)
+The same plugin runs on three surfaces. Verify on any of them with `/cdp:echo` — it answers `hello world`.
+
+### Cowork (Claude Desktop)
+
+**Customize → Plugins → Add → Add marketplace → Add from a repository** → `simonediroma/cdp`, then **Discover → cdp → Add**.
+
+### Claude Code (CLI, IDE, desktop)
 
 ```
 /plugin marketplace add simonediroma/cdp
 /plugin install cdp@simonediroma-cdp
 ```
 
-Verify with `/cdp:echo` — if it responds `hello world`, the plugin is active.
+### Cloud (Claude Code on the web)
 
----
+Add the marketplace `simonediroma/cdp` at [claude.ai/customize/plugins](https://claude.ai/customize/plugins), then start a new session. Plugins installed locally don't carry over to cloud sessions, and a cloud session works on a fresh clone of the repo: commit the documents you want cdp to read, and push the spec files it writes before closing.
 
-### Method 2 — Local clone
-
-```bash
-git clone https://github.com/simonediroma/cdp.git
-```
-
-Open the Claude Desktop configuration file:
-
-- **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
-- **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
-
-Add the plugin to the `plugins` section (create it if it doesn't exist), then restart Claude Desktop:
-
-```json
-{
-  "plugins": [
-    { "name": "cdp", "path": "/absolute/path/to/cdp" }
-  ]
-}
-```
-
----
+Details per surface: [Where cdp Runs](https://simonediroma.github.io/cdp/minicourse/appendix/03-where-cdp-runs/).
 
 ### Local test (Claude Code CLI)
 
@@ -163,7 +148,9 @@ Write it once per product or team. Copy this template and fill it in:
 
 ### How to pass it to the plugin
 
-**Claude Desktop** — attach `architecture-context.md` to the chat before running `/cdp:spec-to-code`. Claude will read it as part of the conversation context.
+**Cowork** — put `architecture-context.md` in the folder Cowork works in, or attach it to the chat before running `/cdp:spec-to-code`.
+
+**Cloud session** — commit `architecture-context.md` to the repo (root or `docs/`) before starting the session; the session only sees what's in the clone.
 
 **Claude Code CLI** — open Claude Code in the repo root. Place the file at `docs/architecture-context.md` or in the root. The plugin reads it directly from the filesystem.
 

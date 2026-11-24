@@ -14,6 +14,7 @@ SECTION_TITLES = {
     "course-4-testing-and-iteration": "4 · Testing & iteration",
     "course-5-hello-world": "5 · Hello world capstone",
     "appendix": "Appendix",
+    "guides": "Guides",
     "cdp-protocol": "CDP protocol deep dive",
     "self-demolition-example": "Self-demolition example",
     "sessions": "Sessions",
@@ -58,6 +59,7 @@ nav = [
     {"Home": "index.md"},
     {"Minicourse": [{"Overview": "minicourse/README.md"}] + courses
                    + [{"Appendix": section(mc / "appendix")}]},
+    {"Guides": section(mc / "guides")},
     {"Documents": section(SRC / "document")},
 ]
 Path(".site-src.yml").write_text("INHERIT: mkdocs.yml\nnav:\n" + "\n".join(dump(nav)) + "\n", encoding="utf-8")

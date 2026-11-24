@@ -4,7 +4,7 @@ Before any generative or adversarial work happens, the CDP has a one-time setup 
 
 ## Declare your operating mode
 
-- **Persistent mode (default, recommended for any real project).** The LLM has read/write access to a project folder. Sessions, history, and memory persist as files across sessions. This is what the `claude-cdp` plugin gives you.
+- **Persistent mode (default, recommended for any real project).** The LLM has read/write access to a project folder. Sessions, history, and memory persist as files across sessions. This is what the `claude-cdp` plugin gives you — on Cowork, in Claude Code, and on cloud sessions, where the folder is a repo clone and state persists only once committed and pushed ([Where cdp Runs](../03-where-cdp-runs.md)).
 - **Single-session mode (fallback).** No folder access. The entire cycle — manifesto, spec, persona, accumulating history — lives inside one chat's context. You export the conversation at the end to preserve state.
 
 Protocol behavior is identical either way; only *where the state lives* differs.

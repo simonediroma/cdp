@@ -48,6 +48,10 @@ Same source as Courses 1-2 for the mechanics reused here: `skills/onboarding/SKI
 
 Course 1 Lesson 05 already flagged this, and it applies here too: the onboarding interview itself now asks its seven questions in generic wording, with a marketing-example-versus-product-example callout under each one — so answering as a builder is already the intended path, not a workaround. What's still marketing-shaped is downstream: `project-spec.md`'s ten section names (audience, channels, message hierarchy, and the rest) and the vulnerability categories `/cdp:persona` and `/cdp:demolish` use. This course uses the "translate loosely" path from that lesson for those downstream parts. If you'd rather write a plain PRD and skip straight to `/cdp:spec-to-code`, that path is still open — see Course 1 Lesson 05 for both options.
 
+## Where it runs
+
+Every lesson works on **Cowork**, **Claude Code** and **cloud sessions**. Install steps, where your files live and what has to be committed on a cloud session: [Where cdp Runs](../appendix/03-where-cdp-runs.md).
+
 ## Unfamiliar term?
 
 Check [`../appendix/01-glossary.md`](../appendix/01-glossary.md) and [`../appendix/02-useful-resources.md`](../appendix/02-useful-resources.md).

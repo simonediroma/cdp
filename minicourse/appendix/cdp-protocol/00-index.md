@@ -57,6 +57,10 @@ This deep dive is a teaching layer over two primary documents in the [cdp claude
 
 Where a lesson makes a claim, it cites the section (`§` for the manifesto, `F` for foundations) so you can go read the source directly.
 
+## Where it runs
+
+The protocol itself needs no plugin. If you run it through `cdp`, it works on **Cowork**, **Claude Code** and **cloud sessions** — see [Where cdp Runs](../03-where-cdp-runs.md).
+
 ## Unfamiliar term?
 
 Check [`../01-glossary.md`](../01-glossary.md) and [`../02-useful-resources.md`](../02-useful-resources.md).

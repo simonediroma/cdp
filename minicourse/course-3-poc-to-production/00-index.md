@@ -43,6 +43,10 @@ By the end of this course you will be able to:
 
 Grounded in `skills/arch-init/SKILL.md`, `skills/spike-integrate/SKILL.md`, `skills/session-start/SKILL.md`, `skills/resume/SKILL.md`, and the FEATURE-ADDITION sections of `skills/spec-to-code-update/SKILL.md` and its `references/`.
 
+## Where it runs
+
+Every lesson works on **Cowork**, **Claude Code** and **cloud sessions**. Install steps, where your files live and what has to be committed on a cloud session: [Where cdp Runs](../appendix/03-where-cdp-runs.md).
+
 ## Unfamiliar term?
 
 Check [`../appendix/01-glossary.md`](../appendix/01-glossary.md) and [`../appendix/02-useful-resources.md`](../appendix/02-useful-resources.md).

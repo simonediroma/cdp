@@ -2,43 +2,32 @@
 
 Lesson 02 named CDP as the path this course teaches hands-on from here forward. This lesson is the on-ramp: getting the `claude-cdp` plugin installed and verified, so Lesson 05 has something to run. If you're following one of the other two paths from Lesson 02 instead, skip ahead to Chapter 2 — `/cdp:spec-to-code` only needs a frozen PRD, not one produced by this specific plugin.
 
-Two installation paths, both documented in the [cdp claude plugin](https://github.com/simonediroma/cdp)'s main `README.md`. Pick whichever matches how you work.
+The plugin runs on three surfaces — **Cowork** (Claude Desktop), **Claude Code** (CLI, IDE, desktop) and **Cloud** (Claude Code on the web). Pick the one that matches how you work; every lesson in this course works on all three. [Where cdp Runs](../appendix/03-where-cdp-runs.md) compares them side by side.
 
-## Method 1 — Marketplace (recommended)
+## Cowork (Claude Desktop)
 
-1. In Claude Desktop, open **Menu → Plugins → Browse Marketplace** (or click the ⊕ icon in the sidebar)
-2. If `cdp` doesn't appear in the default list, add the repository manually: `https://github.com/simonediroma/cdp`
-3. Click **Install** next to *cdp*
-4. Verify: type `/cdp:echo` in chat — it should respond `hello world`
+1. In the left sidebar open **Customize → Plugins**
+2. Click **Add → Add marketplace → Add from a repository**, and enter `simonediroma/cdp`
+3. Open the **Discover** tab, select *cdp*, click **Add**
+4. Verify: type `/cdp:echo` — it should respond `hello world`
 
-## Method 2 — Manual installation
+## Claude Code (CLI, IDE, desktop)
 
-1. Clone the repo: `git clone https://github.com/simonediroma/cdp.git`
-2. Open Claude Desktop's config file:
-   - macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
-   - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
-3. Add the plugin entry:
-   ```json
-   {
-     "plugins": [
-       {
-         "name": "cdp",
-         "path": "/absolute/path/to/cdp"
-       }
-     ]
-   }
-   ```
-4. Restart Claude Desktop
-5. Verify: `/cdp:echo` → `hello world`
-
-## Local test (Claude Code CLI)
-
-If you're working from the command line instead of the desktop app:
-
-```bash
-claude --plugin-dir ./cdp
+```
+/plugin marketplace add simonediroma/cdp
+/plugin install cdp@simonediroma-cdp
 /cdp:echo
 ```
+
+To try a local checkout without installing it: `git clone https://github.com/simonediroma/cdp.git`, then `claude --plugin-dir ./cdp`.
+
+## Cloud (Claude Code on the web)
+
+1. Go to [claude.ai/customize/plugins](https://claude.ai/customize/plugins) and add the marketplace `simonediroma/cdp`, then add *cdp*
+2. Start a **new** cloud session on the GitHub repository that will hold your spec
+3. Verify: `/cdp:echo`
+
+Plugins installed on your computer don't follow you into cloud sessions — this step is separate. And a cloud session works on a fresh clone of the repo: any document you want onboarding to read must be committed first, and the spec files it writes must be pushed before you close the session.
 
 ## Why the echo check matters
 
@@ -46,11 +35,11 @@ claude --plugin-dir ./cdp
 
 ## What you get once it's installed
 
-Ten commands become available (`/cdp:onboarding`, `/cdp:persona`, `/cdp:demolish`, `/cdp:integrate`, `/cdp:export`, `/cdp:resume`, `/cdp:session-start`, `/cdp:spec-to-code`, `/cdp:spike-integrate`, `/cdp:arch-init`), plus `/cdp:echo`. Lesson 04 walks through what each one does and when you'd reach for it.
+Every `/cdp:` command becomes available — `/cdp:onboarding`, `/cdp:persona`, `/cdp:derisk`, `/cdp:demolish`, `/cdp:integrate`, `/cdp:export` and the rest, plus `/cdp:echo`. Lesson 04 walks through what each one does and when you'd reach for it.
 
 ## Check your understanding
 
 - What does a successful `/cdp:echo` actually verify, and why check it before running `/cdp:onboarding`?
-- If you're on Claude Code CLI rather than Claude Desktop, what changes about installation?
+- On a cloud session, what has to happen before onboarding can read your documents — and after it, before you close the session?
 
 *Next: [04 — Command Overview](04-command-overview.md).*

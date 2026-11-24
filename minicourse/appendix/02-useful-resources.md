@@ -4,18 +4,13 @@ External, official documentation for the tools and platforms the five courses me
 
 ---
 
-## Claude Code — the surfaces
+## Claude — the surfaces cdp runs on
 
-The courses mention "Claude Desktop," "Claude Code CLI," and occasionally the web — these are different surfaces for related but distinct products, and the courses assume you can tell them apart.
+The plugin runs on three surfaces, and every course works on all of them — [Where cdp Runs](03-where-cdp-runs.md) covers install, files and persistence for each.
 
-- **Claude Code** is the agentic coding tool itself — it reads your codebase, edits files, and runs commands. It's available as:
-  - a **CLI** in your terminal (`claude` command) — what Course 1 Lesson 03's local-test path and Course 2 Lesson 05's "open a Claude Code session in the repo root" both assume
-  - a **desktop app** (Mac/Windows) — where the `claude-cdp` plugin itself is installed and where Course 1's `/cdp:onboarding` → `/cdp:demolish` → `/cdp:integrate` cycle typically runs
-  - a **web app** at [claude.ai/code](https://claude.ai/code) — browser-based sessions, including remote execution environments
-  - **IDE extensions** for VS Code and JetBrains — inline coding assistance inside an editor you already use
-- Official docs: [code.claude.com/docs](https://code.claude.com/docs/en/overview)
-
-**Claude Desktop** (a separate product from Claude Code) is the general-purpose chat app where plugins like `cdp` install via the Marketplace — Course 1 Lesson 03's Method 1 and Method 2 both target this app specifically.
+- **Cowork**, in the Claude Desktop app (Mac/Windows) — plugins install from **Customize → Plugins**. The natural home for Course 1's onboarding → demolish → integrate cycle if you don't live in a terminal. Docs: [Use plugins in Cowork](https://support.claude.com/en/articles/13837440-use-plugins-in-cowork)
+- **Claude Code** — the agentic coding tool: a **CLI** (`claude`), **IDE extensions** for VS Code and JetBrains, and the desktop app. What Course 2 Lesson 05's "open a Claude Code session in the repo root" assumes. Docs: [code.claude.com/docs](https://code.claude.com/docs/en/overview) · [Discover and install plugins](https://code.claude.com/docs/en/discover-plugins)
+- **Cloud** — Claude Code on the web at [claude.ai/code](https://claude.ai/code), and from the mobile app: sessions run in a cloud container on a fresh clone of a GitHub repo. Plugins come from your claude.ai account, not your computer. Docs: [Claude Code on the web](https://code.claude.com/docs/en/claude-code-on-the-web)
 
 ## MCP — Model Context Protocol
 

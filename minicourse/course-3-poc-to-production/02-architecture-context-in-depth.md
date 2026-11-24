@@ -58,7 +58,8 @@ The two do share one section almost verbatim: `/cdp:spec-to-code` Step 1 reads `
 
 ## How it reaches the plugin
 
-- **Claude Desktop** — attach the file to the chat before running `/cdp:spec-to-code`; it's read as conversation context.
+- **Cowork** — put the file in the folder Cowork works in, or attach it to the chat before running `/cdp:spec-to-code`.
+- **Cloud session** — commit it to the repo (root or `docs/`) before starting the session; the session only sees what's in the clone.
 - **Claude Code CLI** — place it at `architecture-context.md` (repo root) or `docs/architecture-context.md`; the plugin reads it directly from the filesystem.
 - **Hybrid (recommended for teams)** — keep this file for the stable parts (stack, conventions, design system) and let Claude Code read the actual repo for module-level details specific to each feature. This combination produces the most precise macro prompts, because you're not asking one file to describe everything forever.
 

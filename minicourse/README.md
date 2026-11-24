@@ -12,7 +12,9 @@ Five short courses, meant to be taken in order. Each builds on the one before it
 
 Course 1 doesn't require the plugin to get value from it — Lesson 02 covers two other legitimate paths to a hardened spec, and the [Appendix's CDP Protocol deep dive](appendix/cdp-protocol/00-index.md) teaches the full method by hand on any LLM, plugin or not. Courses 2–5 assume the plugin is installed (see the [cdp claude plugin](https://github.com/simonediroma/cdp)'s main `README.md` for installation).
 
-A sixth folder, [`appendix/`](appendix/00-index.md), isn't a course — it's reference material: the complete, plugin-agnostic deep dive on the CDP protocol itself (for readers who pick CDP in Course 1 and want the full manifesto-level mechanics), a glossary of the terms used across all five courses (MCP, JWT, PaaS, and the like), and a curated list of official external documentation for the tools the courses mention but don't teach from scratch (Claude Code's own surfaces, Cursor, git/PR basics, deploy platforms, and more).
+A [`guides/`](guides/00-index.md) folder holds short standalone walkthroughs — e.g. onboarding a partially written book. Every course and guide runs on **Cowork**, **Claude Code** and **cloud sessions**: see [Where cdp Runs](appendix/03-where-cdp-runs.md).
+
+The [`appendix/`](appendix/00-index.md) folder isn't a course — it's reference material: the complete, plugin-agnostic deep dive on the CDP protocol itself (for readers who pick CDP in Course 1 and want the full manifesto-level mechanics), a glossary of the terms used across all five courses (MCP, JWT, PaaS, and the like), and a curated list of official external documentation for the tools the courses mention but don't teach from scratch (Claude Code's own surfaces, Cursor, git/PR basics, deploy platforms, and more).
 
 ---
 

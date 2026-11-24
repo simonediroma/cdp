@@ -2,6 +2,8 @@
 
 `/cdp:onboarding` is the plugin's concrete answer to "how do I get a first draft down": a guided interview that scans whatever documents already exist in your project folder, works out what's covered versus what's a gap, and asks you about the gaps only — one question at a time, confirming its understanding after each answer before moving on. This is the plugin's version of what Path C in Lesson 02 needs before it can attack anything — you can't demolish a spec that doesn't exist yet.
 
+"Your project folder" means the folder Cowork works in, the directory you started Claude Code in, or — on a cloud session — the repo clone, so commit your documents before starting there. See [Where cdp Runs](../appendix/03-where-cdp-runs.md).
+
 ## What it actually asks
 
 The interview itself asks seven questions in generic form — the same wording regardless of whether you're running a marketing campaign, a product feature, or anything else. Right after each question, the plugin shows a "how to read this" insight with a marketing-campaign example and a product-feature example, so you can translate it to your own project before answering:
